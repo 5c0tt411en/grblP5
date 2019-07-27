@@ -20,10 +20,15 @@ void draw() {
     stroke(255);
     if (drawFlag) {
         for (int i = 0; i < 360; i++) {
-            float x1 = width / 2 + 20 * sin(radians(i + 40));
-            float y1 = height / 2 + 20 * cos(radians(i + 40));
-            float x2 = width / 2 + 30 * sin(radians(i));
-            float y2 = height / 2 + 30 * cos(radians(i));
+            float x1 = width / 2;
+            float y1 = height / 2;
+            float x2 = width / 2 + 20 * sin(radians(i + 40));
+            float y2 = height / 2 + 20 * cos(radians(i + 40));
+            plotter.line(x1, y1, x2, y2);
+            x1 = width / 2 + 20 * sin(radians(i + 40));
+            y1 = height / 2 + 20 * cos(radians(i + 40));
+            x2 = width / 2 + 40 * sin(radians(i));
+            y2 = height / 2 + 40 * cos(radians(i));
             plotter.line(x1, y1, x2, y2);
         }
     }
