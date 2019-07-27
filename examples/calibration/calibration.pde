@@ -16,13 +16,17 @@ void draw() {
 
 void keyReleased() {
     if (key == 'h') plotter.homing();
-    if (key == 'l')
-        plotter.line(random(100), random(100), random(100), random(100));
-    if (key == 'r')
-        plotter.rect(random(150), random(150), random(30), random(30));
     if (key == 's') plotter.servo(true);
     if (key == 'S') plotter.servo(false);
     if (key == 'i') println(plotter.getStatus());
-    if (key == 'c')
-        plotter.circle(random(150), random(150), random(30));
+    if (key == 'c') startCalibration();
+}
+
+void startCalibration () {
+    int d = 10;
+    plotter.circle(d, d, d / 2);
+    plotter.circle(width - d, d, d / 2);
+    plotter.circle(width - d, height - d, d / 2);
+    plotter.circle(d, height - d, d / 2);
+    plotter.home();
 }

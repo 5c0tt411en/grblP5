@@ -11,6 +11,7 @@ public class GrblP5 {
     int mMin;
     float speed;
     String[] st, st_;
+    Boolean onSketch;
 
     //list devices
     public static String[] list() {
@@ -24,6 +25,7 @@ public class GrblP5 {
         this.info = "";
         this.speed = 3000;
         parent.delay(3000);
+        this.onSketch = false;
     }
 
     //get status
@@ -87,8 +89,17 @@ public class GrblP5 {
         return p;
     }
 
+    //just go to point
+    public void goTo(float x, float y) {
+        if (onSketch) parent.point(x, y);
+        stay();
+        s.write("G90 G0 X" + Float.toString(x) + " Y" + Float.toString(y) + "\n");
+        stay();
+    }
+
     //draw line
     public void line(float x1, float y1, float x2, float y2) {
+        if (onSketch) parent.line(x1, y1, x2, y2);
         stay();
         servo(false);
         stay();
@@ -104,6 +115,7 @@ public class GrblP5 {
 
     //draw rectangle
     public void rect(float x, float y, float w, float h) {
+        if (onSketch) parent.rect(x, y, w, h);
         stay();
         servo(false);
         stay();
@@ -124,15 +136,16 @@ public class GrblP5 {
     }
 
     //draw circle
-    public void circle(float x, float y, float r) {
+    public void circle(float x, float y, float d) {
+        if (onSketch) parent.ellipse(x, y, d, d);
         stay();
         servo(false);
         stay();
-        s.write("G90 G0 X" + Float.toString(x) + " Y" + Float.toString(y) + "\n");
+        s.write("G90 G0 X" + Float.toString(x - d / 2) + " Y" + Float.toString(y) + "\n");
         stay();
         servo(true);
         stay(100);
-        s.write("G2 X" + Float.toString(x) + " Y" + Float.toString(y) + " I" + Float.toString(r) + " J" + Float.toString(0) + " F" + Float.toString(speed) + "\n");
+        s.write("G2 X" + Float.toString(x - d / 2) + " Y" + Float.toString(y) + " I" + Float.toString(d / 2) + " J" + Float.toString(0) + " F" + Float.toString(speed) + "\n");
         stay();
         servo(false);
         stay();
@@ -141,10 +154,15 @@ public class GrblP5 {
     //stay until current jog finish.(Run -> Idle)
     public void stay() {
         while (getStatus().equals("Run")) {
-            parent.delay(1);
+            // parent.delay(1);
             if (getStatus().equals("Idle"))
                 break;
         }
+    }
+
+    //draw the path on the processing sketch
+    public void drawOnSketch(Boolean flag) {
+        onSketch = flag;
     }
 
     //stay until current jog finish.(Run -> Idle)

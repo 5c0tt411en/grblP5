@@ -3,6 +3,8 @@ import grblP5.*;
 
 GrblP5 plotter;
 
+Boolean drawFlag = false;
+
 void setup() {
     size(210, 297);
     plotter = new GrblP5(this, GrblP5.list()[2], 115200);
@@ -12,17 +14,23 @@ void setup() {
 void draw() { 
     background(0);
     ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
+
+    stroke(255);
+    if (drawFlag) {
+        for (int i = 0; i < 100; i++) {
+            float x = width / 2;
+            float y = height / 2;
+            float d = float(i);
+            plotter.circle(x, y, d);
+        }
+    }
+    drawFlag = false;
 }
 
 void keyReleased() {
     if (key == 'h') plotter.homing();
-    if (key == 'l')
-        plotter.line(random(100), random(100), random(100), random(100));
-    if (key == 'r')
-        plotter.rect(random(150), random(150), random(30), random(30));
     if (key == 's') plotter.servo(true);
     if (key == 'S') plotter.servo(false);
     if (key == 'i') println(plotter.getStatus());
-    if (key == 'c')
-        plotter.circle(random(150), random(150), random(30));
+    if (key == 'd') drawFlag = true;
 }
