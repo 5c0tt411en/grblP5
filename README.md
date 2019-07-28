@@ -2,7 +2,7 @@
 grbl library for Processing.  
 This repo is especially focused on using plotters, laser cutter(not considering z-axis and linear power).
 
-![linesOnCircleSpiral](https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true">
 
 # Usage
 ## import library
@@ -58,22 +58,22 @@ Just go to position:
 
 ## Examples
 ### Examples/basic/bacic.pde  
-![basic](https://scottallen.ws/p5Library/grblP5/basic.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/basic.gif?raw=true">
 
 ### Examples/linesOnCircle/linesOnCircle.pde  
-![linesOnCircle](https://scottallen.ws/p5Library/grblP5/linesOnCircle.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircle.gif?raw=true">
 
 ### Examples/linesOnCircleSpiral/linesOnCircleSpiral.pde  
-![linesOnCircleSpiral](https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true">
 
 ### Examples/perlinNoise/perlinNoise.pde  
-![perlinNoise](https://scottallen.ws/p5Library/grblP5/perlinNoise.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/perlinNoise.gif?raw=true">
 
 ### Examples/facePerlinNoise/facePerlinNoise.pde  
-![facePerlinNoise](https://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif?raw=true">
 
 ### Examples/signiture/signiture.pde  
-![signiture](https://scottallen.ws/p5Library/grblP5/signiture.gif)
+<img src="https://scottallen.ws/p5Library/grblP5/signiture.gif?raw=true">
 
 # Gallery
 ### 360 lines
