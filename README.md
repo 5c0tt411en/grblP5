@@ -58,22 +58,22 @@ Just go to position:
 
 ## Examples
 ### Examples/basic/bacic.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/basic.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/basic.gif?raw=true" width="480px">
 
 ### Examples/linesOnCircle/linesOnCircle.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircle.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircle.gif?raw=true" width="480px">
 
 ### Examples/linesOnCircleSpiral/linesOnCircleSpiral.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true" width="480px">
 
 ### Examples/perlinNoise/perlinNoise.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/perlinNoise.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/perlinNoise.gif?raw=true" width="480px">
 
 ### Examples/facePerlinNoise/facePerlinNoise.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif?raw=true" width="480px">
 
 ### Examples/signiture/signiture.pde  
-<img src="https://scottallen.ws/p5Library/grblP5/signiture.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/signiture.gif?raw=true" width="480px">
 
 # Gallery
 ### 360 lines
