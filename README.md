@@ -2,7 +2,7 @@
 grbl library for Processing.  
 This repo is especially focused on using plotters, laser cutter(not considering z-axis and linear power).
 
-![linesOnCircleSpiral](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
+![linesOnCircleSpiral](https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
 
 # Usage
 ## import library
@@ -58,39 +58,39 @@ Just go to position:
 
 ## Examples
 ### Examples/basic/bacic.pde  
-![basic](http://scottallen.ws/p5Library/grblP5/basic.gif)
+![basic](https://scottallen.ws/p5Library/grblP5/basic.gif)
 
 ### Examples/linesOnCircle/linesOnCircle.pde  
-![linesOnCircle](http://scottallen.ws/p5Library/grblP5/linesOnCircle.gif)
+![linesOnCircle](https://scottallen.ws/p5Library/grblP5/linesOnCircle.gif)
 
 ### Examples/linesOnCircleSpiral/linesOnCircleSpiral.pde  
-![linesOnCircleSpiral](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
+![linesOnCircleSpiral](https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
 
 ### Examples/perlinNoise/perlinNoise.pde  
-![perlinNoise](http://scottallen.ws/p5Library/grblP5/perlinNoise.gif)
+![perlinNoise](https://scottallen.ws/p5Library/grblP5/perlinNoise.gif)
 
 ### Examples/facePerlinNoise/facePerlinNoise.pde  
-![facePerlinNoise](http://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif)
+![facePerlinNoise](https://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif)
 
 ### Examples/signiture/signiture.pde  
-![signiture](http://scottallen.ws/p5Library/grblP5/signiture.gif)
+![signiture](https://scottallen.ws/p5Library/grblP5/signiture.gif)
 
 # Gallery
 ### 360 lines
-![linesOnCircleSpiral_](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.JPG)
+![linesOnCircleSpiral_](https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.JPG)
 
 ### perlin noise field
-![perlinNoise_](http://scottallen.ws/p5Library/grblP5/perlinNoise.JPG)
+![perlinNoise_](https://scottallen.ws/p5Library/grblP5/perlinNoise.JPG)
 
 ### perlin noise face
-![facePerlinNoise_](http://scottallen.ws/p5Library/grblP5/facePerlinNoise.JPG)
+![facePerlinNoise_](https://scottallen.ws/p5Library/grblP5/facePerlinNoise.JPG)
 
 ### signiture agent
-![signiture_](http://scottallen.ws/p5Library/grblP5/signiture.JPG)
+![signiture_](https://scottallen.ws/p5Library/grblP5/signiture.JPG)
 
 ## To-do
 More examples for geidai plotter workshop.
 - xml inclusion in grblP5 Library
 
 ## geidai workshop
-![flyer](http://scottallen.ws/p5Library/grblP5/geidaiWSScottAllen.jpg)
+![flyer](https://scottallen.ws/p5Library/grblP5/geidaiWSScottAllen.jpg)
