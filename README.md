@@ -2,7 +2,7 @@
 grbl library for Processing.  
 This repo is especially focused on using plotters, laser cutter(not considering z-axis and linear power).
 
-![linesOnCircleSpiral](images/linesOnCircleSpiral.gif)
+![linesOnCircleSpiral](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
 
 # Usage
 ## import library
@@ -58,39 +58,39 @@ Just go to position:
 
 ## Examples
 ### Examples/basic/bacic.pde  
-![basic](images/basic.gif)
+![basic](http://scottallen.ws/p5Library/grblP5/basic.gif)
 
 ### Examples/linesOnCircle/linesOnCircle.pde  
-![linesOnCircle](images/linesOnCircle.gif)
+![linesOnCircle](http://scottallen.ws/p5Library/grblP5/linesOnCircle.gif)
 
 ### Examples/linesOnCircleSpiral/linesOnCircleSpiral.pde  
-![linesOnCircleSpiral](images/linesOnCircleSpiral.gif)
+![linesOnCircleSpiral](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif)
 
 ### Examples/perlinNoise/perlinNoise.pde  
-![perlinNoise](images/perlinNoise.gif)
+![perlinNoise](http://scottallen.ws/p5Library/grblP5/perlinNoise.gif)
 
 ### Examples/facePerlinNoise/facePerlinNoise.pde  
-![facePerlinNoise](images/facePerlinNoise.gif)
+![facePerlinNoise](http://scottallen.ws/p5Library/grblP5/facePerlinNoise.gif)
 
 ### Examples/signiture/signiture.pde  
-![signiture](images/signiture.gif)
+![signiture](http://scottallen.ws/p5Library/grblP5/signiture.gif)
 
 # Gallery
 ### 360 lines
-![linesOnCircleSpiral_](images/linesOnCircleSpiral.JPG)
+![linesOnCircleSpiral_](http://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.JPG)
 
 ### perlin noise field
-![perlinNoise_](images/perlinNoise.JPG)
+![perlinNoise_](http://scottallen.ws/p5Library/grblP5/perlinNoise.JPG)
 
 ### perlin noise face
-![facePerlinNoise_](images/facePerlinNoise.JPG)
+![facePerlinNoise_](http://scottallen.ws/p5Library/grblP5/facePerlinNoise.JPG)
 
 ### signiture agent
-![signiture_](images/signiture.JPG)
+![signiture_](http://scottallen.ws/p5Library/grblP5/signiture.JPG)
 
 ## To-do
 More examples for geidai plotter workshop.
 - xml inclusion in grblP5 Library
 
 ## geidai workshop
-![flyer](images/geidaiWSScottAllen.jpg)
+![flyer](http://scottallen.ws/p5Library/grblP5/geidaiWSScottAllen.jpg)
