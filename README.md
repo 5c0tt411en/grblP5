@@ -2,7 +2,7 @@
 grbl library for Processing.  
 This repo is especially focused on using plotters, laser cutter(not considering z-axis and linear power).
 
-<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true">
+<img src="https://scottallen.ws/p5Library/grblP5/linesOnCircleSpiral.gif?raw=true" width="480px">
 
 # Usage
 ## import library
