@@ -14,6 +14,7 @@ void setup() {
 }
 
 void draw() { 
+    fill(255);
     ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
 
     noFill();

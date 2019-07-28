@@ -1,6 +1,5 @@
 import gab.opencv.*;
 import processing.video.*;
-
 import processing.serial.*;
 import grblP5.*;
 
@@ -13,7 +12,6 @@ ArrayList<Contour> contours;
 ArrayList<PVector> pts, allPts;
 
 Boolean edgeFlag = false;
-float sc = 210 / 640;
 
 void setup() {
     size(210, 297);
@@ -36,6 +34,9 @@ void draw() {
     cv.gray();
     cv.threshold(150);
     contours = cv.findContours();
+    
+    fill(255);
+    ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
 
     noFill();
     for (int i = 0; i < contours.size(); i++) {
@@ -50,11 +51,7 @@ void draw() {
             }
         }
     }
-
     edgeFlag = false;
-
-    fill(255);
-    ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
 }
 
 void keyReleased() {

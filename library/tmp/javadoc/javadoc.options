@@ -1,0 +1,8 @@
+-charset 'UTF-8'
+-classpath '/Users/scott/Google Drive/Processing/libraries/grblP5/library/classes/java/main:/Users/scott/Google Drive/Processing/libraries/grblP5/library/resources/main:/Users/scott/.gradle/caches/modules-2/files-2.1/org.scream3r/jssc/2.8.0/7e8d93052a8743a7937a6d46854057ac1ce876c1/jssc-2.8.0.jar'
+-d '/Users/scott/Google Drive/Processing/libraries/grblP5/reference/javadoc'
+-doctitle 'grblP5  API'
+-encoding 'UTF-8'
+-quiet 
+-windowtitle 'grblP5  API'
+'/Users/scott/Google Drive/Processing/libraries/grblP5/src/main/java/grblP5/GrblP5.java'

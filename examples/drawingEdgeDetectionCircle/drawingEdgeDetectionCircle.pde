@@ -13,14 +13,14 @@ ArrayList<Contour> contours;
 ArrayList<PVector> pts, allPts;
 
 Boolean edgeFlag = false;
-float sc = 210 / 640;
+
+//////////////////////////
+//////////////////////////
 
 void setup() {
     size(210, 297);
-
     plotter = new GrblP5(this, GrblP5.list()[2], 115200);
     plotter.unlock();
-
     cap = new Capture(this, Capture.list()[9]);
     cap.start();
     printArray(Capture.list());
@@ -37,6 +37,9 @@ void draw() {
     cv.threshold(150);
     contours = cv.findContours();
 
+    fill(255);
+    ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
+
     noFill();
     for (int i = 0; i < contours.size(); i++) {
         stroke(200, 0, 0);
@@ -45,17 +48,10 @@ void draw() {
             pts = contours.get(i).getPoints();
             for (int j = 0; j < pts.size(); j+=1) {
                 plotter.circle(pts.get(j).x, pts.get(j).y, 2);
-                //plotter.goTo(pts.get(j).x, pts.get(j).y);
-                //if (j == 0) plotter.servo(true);
-                //if (j == pts.size() - 1) plotter.servo(false);
             }
         }
     }
-
     edgeFlag = false;
-
-    fill(255);
-    ellipse(plotter.getPos()[0], plotter.getPos()[1], 10, 10);
 }
 
 void keyReleased() {

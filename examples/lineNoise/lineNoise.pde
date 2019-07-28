@@ -1,5 +1,3 @@
-
-
 import processing.serial.*;
 import grblP5.*;
 

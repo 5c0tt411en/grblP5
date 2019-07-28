@@ -2,10 +2,9 @@
 grbl library for Processing.  
 This repo is especially focused on using plotters, laser cutter(not considering z-axis and linear power).
 
-# Demo
-![dotdemo](images/plotterDotDemo.gif)
+![linesOnCircleSpiral](images/linesOnCircleSpiral.gif)
 
-# usage
+# Usage
 ## import library
 ```
 import processing.serial.*;
@@ -35,25 +34,63 @@ Just go to the home position:
 Determine the home position with limit switch trigger:  
 ``plotter.homing();``
 
+## pen up / down
+Control pen up / down with servo motor:  
+``plotter.servo(Boolean flag);``
+
 ## drawing
 All drawing methods can be written like Processing.  
 ### rectangle
+Draw rectangle:  
 ``plotter.rect(float x, float y, float w, float h)``  
 
 ### circle
+Draw circle:  
 ``plotter.circle(float x, float y, float r)``  
 
 ### line
+Draw line:  
 ``plotter.line(float x1, float y1, float x2, float y2)``  
 
+### go to position
+Just go to position:  
+``plotter.goTo(float x, float y)``  
+
 ## Examples
-Examples/basic/bacic.pde
+### Examples/basic/bacic.pde  
+![basic](images/basic.gif)
+
+### Examples/linesOnCircle/linesOnCircle.pde  
+![linesOnCircle](images/linesOnCircle.gif)
+
+### Examples/linesOnCircleSpiral/linesOnCircleSpiral.pde  
+![linesOnCircleSpiral](images/linesOnCircleSpiral.gif)
+
+### Examples/perlinNoise/perlinNoise.pde  
+![perlinNoise](images/perlinNoise.gif)
+
+### Examples/facePerlinNoise/facePerlinNoise.pde  
+![facePerlinNoise](images/facePerlinNoise.gif)
+
+### Examples/signiture/signiture.pde  
+![signiture](images/signiture.gif)
+
+# Gallery
+### 360 lines
+![linesOnCircleSpiral_](images/linesOnCircleSpiral.JPG)
+
+### perlin noise field
+![perlinNoise_](images/perlinNoise.JPG)
+
+### perlin noise face
+![facePerlinNoise_](images/facePerlinNoise.JPG)
+
+### signiture agent
+![signiture_](images/signiture.JPG)
 
 ## To-do
 More examples for geidai plotter workshop.
-- manual input
-- image to path using OpenCV
-- image to pointillism
+- xml inclusion in grblP5 Library
 
 ## geidai workshop
 ![flyer](images/geidaiWSScottAllen.jpg)

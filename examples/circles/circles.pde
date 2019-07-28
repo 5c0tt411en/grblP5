@@ -5,6 +5,10 @@ GrblP5 plotter;
 
 Boolean drawFlag = false;
 
+//////////////////////////
+int num = 10, sc = 1;
+//////////////////////////
+
 void setup() {
     size(210, 297);
     plotter = new GrblP5(this, GrblP5.list()[2], 115200);
@@ -17,10 +21,10 @@ void draw() {
 
     stroke(255);
     if (drawFlag) {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             float x = width / 2;
             float y = height / 2;
-            float d = float(i);
+            float d = float(i * sc);
             plotter.circle(x, y, d);
         }
     }
